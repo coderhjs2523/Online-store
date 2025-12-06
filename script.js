@@ -1,6 +1,15 @@
 // ----------------------------
 // MOBILE MENU TOGGLE
 // ----------------------------
+// const toggler = document.getElementById("toggler");
+// const navbar = document.querySelector(".navbar");
+
+// if (toggler && navbar) {
+//   toggler.addEventListener("change", () => {
+//     navbar.classList.toggle("active", toggler.checked);
+//   });
+// }
+
 const toggler = document.getElementById("toggler");
 const navbar = document.querySelector(".navbar");
 
@@ -9,6 +18,15 @@ if (toggler && navbar) {
     navbar.classList.toggle("active", toggler.checked);
   });
 }
+
+// Close menu when a link is clicked
+document.querySelectorAll("header .navbar a").forEach(link => {
+  link.addEventListener("click", function() {
+    if (toggler) toggler.checked = false;
+    if (navbar) navbar.classList.remove("active");
+  });
+});
+
 
 // ----------------------------
 // SMOOTH SCROLL

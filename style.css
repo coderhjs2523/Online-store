@@ -98,7 +98,7 @@ header .icons a:hover {
   color: var(--pink);
 }
 
-#toggler {
+/* #toggler {
   display: none;
 }
 
@@ -110,6 +110,50 @@ header .icons a:hover {
   cursor: pointer;
   border: 1rem solid rgba(0, 0, 0, 0.3);
   display: none;
+} */
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 900px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding-top: 8rem;
+    transition: 0.3s;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .navbar a {
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+  }
+
+  #toggler:checked ~ .navbar {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  header {
+    justify-content: space-between;
+  }
 }
 
 /* Home */
