@@ -247,8 +247,7 @@ header .icons a:hover {
   flex-wrap: wrap;
   gap: 1.5rem;
   padding: 5rem 15rem;
-  /* max-width: 80vw;
-  margin: 0px auto; */
+  justify-content: center;
 }
 
 .icons-container .icons {
@@ -461,6 +460,7 @@ form>textarea{
 @media screen and (width <= 790px) {
   .box-container_footer{
    flex-wrap: wrap;
+   gap: 20px;
 }
 .image_contact > img{
   max-width: 35rem;
@@ -473,6 +473,10 @@ form>textarea{
   }
   .icons-container {
   justify-content: center;
+}
+.box-container_footer{
+   flex-wrap: wrap;
+   gap: 20px;
 }
 
 }
