@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <!-- Header Section Start -->
     <header>
       <input type="checkbox" id="toggler" />
@@ -700,14 +701,28 @@
     <!-- Contact Section End -->
 
     <!-- Cart section start -->
-
-     <!-- Cart section end -->
       <div id="cartPopup" class="cart-popup">
   <div class="cart-content">
     <h2>Your Cart</h2>
     <div id="cartItems"></div>
     <h3>Total: Rs.<span id="cartTotal">0</span></h3>
+
+    <button id="checkout" class="btn">Place Order</button>
+
+
     <button id="closeCart" class="btn">Close</button>
+  </div>
+</div>
+ <!-- Cart section end -->
+
+   <!-- Login Form Popup -->
+<div id="loginPopup">
+  <div class="login-content">
+    <span id="closeLogin">&times;</span>
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
   </div>
 </div>
 
