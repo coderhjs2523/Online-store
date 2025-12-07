@@ -1,14 +1,6 @@
 // ----------------------------
 // MOBILE MENU TOGGLE
 // ----------------------------
-// const toggler = document.getElementById("toggler");
-// const navbar = document.querySelector(".navbar");
-
-// if (toggler && navbar) {
-//   toggler.addEventListener("change", () => {
-//     navbar.classList.toggle("active", toggler.checked);
-//   });
-// }
 
 const toggler = document.getElementById("toggler");
 const navbar = document.querySelector(".navbar");
